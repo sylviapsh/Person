@@ -6,7 +6,7 @@ namespace Person
     {
         //Fields
         private string name;
-        private int? age;
+        private uint? age;
 
         //Properties
         public string Name
@@ -15,7 +15,7 @@ namespace Person
             set { name = value; }
         }
 
-        public int? Age
+        public uint? Age
         {
             get { return age; }
             set { age = value; }
@@ -24,7 +24,7 @@ namespace Person
         //Constructor
         public Person(string name) : this(name, null) { }
 
-        public Person(string name, int? age)
+        public Person(string name, uint? age)
         {
             this.Name = name;
             this.Age = age;
